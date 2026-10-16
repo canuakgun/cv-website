@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Portfolio of Can Ulaş Akgün, a computer engineering student focused on full-stack web development. Projects, experience and contact details.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Can Ulaş Akgün — Computer Engineering Student">
+<meta property="og:description" content="Portfolio of Can Ulaş Akgün, a computer engineering student focused on full-stack web development. Projects, experience and contact details.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💻%3C/text%3E%3C/svg%3E">
+<title>Can Ulaş Akgün — Computer Engineering Student</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f7f8f6;--surface:#fff;--text:#161a1d;--muted:#5d666d;--line:#e2e5e1;--accent:#0f766e;--accent-soft:#d9f0ec;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1214;--surface:#161c1f;--text:#e8ecee;--muted:#99a3a9;--line:#263034;--accent:#4fd1c0;--accent-soft:#16312e;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1214;--surface:#161c1f;--text:#e8ecee;--muted:#99a3a9;--line:#263034;--accent:#4fd1c0;--accent-soft:#16312e;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav{max-width:960px;margin:0 auto;padding:0 20px;height:56px;display:flex;align-items:center;gap:18px}
+nav .brand{font-weight:700;margin-right:auto;text-decoration:none}
+nav a.l{text-decoration:none;color:var(--muted);font-size:15px}
+nav a.l:hover{color:var(--accent)}
+nav button{background:none;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:4px 10px;cursor:pointer;font:inherit;font-size:14px}
+main{max-width:960px;margin:0 auto;padding:0 20px}
+section{padding:64px 0 8px}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.1;margin:0 0 12px;letter-spacing:-.02em}
+h2{font-size:14px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:0 0 20px}
+.hero{padding-top:88px}
+.hero p.sub{font-size:20px;color:var(--muted);max-width:640px;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 18px;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid var(--accent)}
+.btn.p{background:var(--accent);color:var(--bg)}
+.btn.s{color:var(--accent)}
+.ph{color:var(--muted);font-style:italic}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.edu{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.edu b{display:block}
+.sub-h{margin:28px 0 14px;font-size:16px;color:var(--muted);font-weight:600}
+.tg{margin:0 0 14px}
+.tg .lbl{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.proj{position:relative;display:flex;flex-direction:column;gap:10px;transition:border-color .15s,transform .15s}
+.proj:hover{border-color:var(--accent);transform:translateY(-2px)}
+.rank{position:absolute;top:16px;right:18px;font-size:13px;font-weight:700;color:var(--muted)}
+.proj h3{margin:0;padding-right:28px;font-size:18px;word-break:break-word}
+.proj p{margin:0;flex:1}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:12px;padding:2px 10px;border-radius:99px;background:var(--accent-soft);color:var(--accent);font-weight:600}
+.link{font-size:14px;color:var(--accent);font-weight:600;text-decoration:none}
+.xp{margin:0 0 20px}.xp:last-child{margin:0}.xp h3{margin:0;font-size:16px}.xp .m{color:var(--muted);font-size:14px}.bl{margin:6px 0 0;padding-left:20px}.bl li{margin:3px 0}.xp p{margin:6px 0 0}
+[hidden]{display:none!important}button.btn{background:none;font:inherit;font-weight:600;cursor:pointer}
+.contact ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+footer{max-width:960px;margin:72px auto 0;padding:24px 20px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+.links{display:flex;gap:18px;align-items:center}#menu{display:none}
+@media (max-width:620px){#menu{display:inline-block}.links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 20px}.links.open{display:flex}.links a.l{padding:10px 0;width:100%;font-size:16px}}
+</style>
+</head>
+<body>
+<header><nav>
+  <a class="brand" href="#top">Can</a>
+  <div class="links" id="links">
+    <a class="l" href="#about" data-i="nav_about"></a>
+    <a class="l" href="#education" data-i="nav_edu"></a>
+    <a class="l" href="#tech" data-i="nav_tech"></a>
+    <a class="l" href="#projects" data-i="nav_proj"></a>
+    <a class="l" href="#contact" data-i="nav_contact"></a>
+  </div>
+  <button id="lang" type="button" aria-label="Language">TR</button>
+  <button id="theme" type="button" aria-label="Theme">◐</button>
+  <button id="menu" type="button" aria-label="Menu" aria-expanded="false">☰</button>
+</nav></header>
+
+<main id="top">
+  <section class="hero">
+    <h1 data-i="hero_h"></h1>
+    <p class="sub" data-i="hero_sub"></p>
+    <div class="btns">
+      <a class="btn p" href="#projects" data-i="btn_proj"></a>
+      <a class="btn s" href="https://github.com/canuakgun" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn s" href="Can_Ulas_Akgun_CV.pdf" target="_blank" rel="noopener" data-i="btn_cv"></a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 data-i="about_h"></h2>
+    <div class="card">
+      <p style="margin:0 0 12px" data-i="about_ph"></p>
+      <p style="margin:0"><b data-i="a_lang_l"></b> <span data-i="a_lang"></span></p>
+      <p style="margin:4px 0 0"><b data-i="a_int_l"></b> <span data-i="a_int"></span></p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 data-i="edu_h"></h2>
+    <div class="card edu">
+      <div><b>İzmir University of Economics</b><span data-i="edu_deg"></span></div>
+      <span data-i="edu_years"></span>
+    </div>
+    <p class="sub-h" data-i="exp_h"></p>
+    <div class="card">
+      <div class="xp"><h3 data-i="x1_h"></h3><div class="m" data-i="x1_m"></div><ul class="bl"><li data-i="x1_b1"></li><li data-i="x1_b2"></li><li data-i="x1_b3"></li></ul></div>
+      <div class="xp"><h3 data-i="x2_h"></h3><div class="m" data-i="x2_m"></div><p data-i="x2_b"></p></div>
+      <div class="xp"><h3 data-i="x3_h"></h3><div class="m" data-i="x3_m"></div><p data-i="x3_b"></p></div>
+      <div class="xp"><h3 data-i="x4_h"></h3><div class="m" data-i="x4_m"></div><p data-i="x4_b"></p></div>
+    </div>
+  </section>
+
+  <section id="tech">
+    <h2 data-i="tech_h"></h2>
+    <div class="card">
+      <div class="tg"><span class="lbl" data-i="t_cod"></span><div class="tags"><span class="tag">Java</span><span class="tag">C#</span><span class="tag">Python</span><span class="tag">C</span><span class="tag">JavaScript</span><span class="tag">Assembly</span><span class="tag">C++</span></div></div>
+      <div class="tg"><span class="lbl" data-i="t_back"></span><div class="tags"><span class="tag">Spring Boot</span><span class="tag">ASP.NET Core</span><span class="tag">Entity Framework Core</span><span class="tag">JavaFX</span><span class="tag">Selenium</span><span class="tag">Swagger</span></div></div>
+      <div class="tg"><span class="lbl" data-i="t_front"></span><div class="tags"><span class="tag">React</span><span class="tag">Axios</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Tailwind CSS</span><span class="tag">NPM</span></div></div>
+      <div class="tg"><span class="lbl" data-i="t_data"></span><div class="tags"><span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">Pandas</span></div></div>
+      <div class="tg"><span class="lbl" data-i="t_tools"></span><div class="tags"><span class="tag">GitHub</span><span class="tag">GitLab</span><span class="tag">Azure DevOps</span><span class="tag">Jira</span><span class="tag">Trello</span></div></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 data-i="proj_h"></h2>
+    <div class="grid">
+      <article class="card proj"><span class="rank">01</span><h3>Port Ship Tracking System</h3><p data-i="d1"></p><div class="tags"><span class="tag">ASP.NET Core</span><span class="tag">React</span><span class="tag">SQL Server</span></div><a class="link" href="https://github.com/canuakgun/port-ship-tracking-system" target="_blank" rel="noopener" data-i="open"></a></article>
+      <article class="card proj"><span class="rank">02</span><h3>Automated Grader</h3><p data-i="d2"></p><div class="tags"><span class="tag">Java</span></div><a class="link" href="https://github.com/canuakgun/ce_316-project" target="_blank" rel="noopener" data-i="open"></a></article>
+      <article class="card proj"><span class="rank">03</span><h3>Exam Scheduler System</h3><p data-i="d3"></p><div class="tags"><span class="tag">Java</span><span class="tag">JavaFX</span></div><a class="link" href="https://github.com/canuakgun/SE302" target="_blank" rel="noopener" data-i="open"></a></article>
+      <article class="card proj"><span class="rank">04</span><h3>API Gateway</h3><p data-i="d4"></p><div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">PostgreSQL</span></div><a class="link" href="https://github.com/canuakgun/API-Gateway" target="_blank" rel="noopener" data-i="open"></a></article>
+      <article class="card proj"><span class="rank">05</span><h3>ÖSYM Results Scraper</h3><p data-i="d5"></p><div class="tags"><span class="tag">Python</span><span class="tag">Selenium</span></div><a class="link" href="https://github.com/canuakgun/osym-scraper" target="_blank" rel="noopener" data-i="open"></a></article>
+      <article class="card proj"><span class="rank">06</span><h3>Objectville</h3><p data-i="d6"></p><div class="tags"><span class="tag">Java</span></div><a class="link" href="https://github.com/canuakgun/objectville" target="_blank" rel="noopener" data-i="open"></a></article>
+    </div>
+    <div class="grid" id="more-grid" hidden style="margin-top:16px">
+      <article class="card proj"><span class="rank">07</span><h3>Game Catalog</h3><p data-i="d7"></p><div class="tags"><span class="tag">Java</span><span class="tag">JavaFX</span></div><a class="link" href="https://github.com/canuakgun/ce216_project" target="_blank" rel="noopener" data-i="open"></a></article>
+      <article class="card proj"><span class="rank">08</span><h3>Bluejack</h3><p data-i="d8"></p><div class="tags"><span class="tag">Java</span></div><a class="link" href="https://github.com/canuakgun/bluejack" target="_blank" rel="noopener" data-i="open"></a></article>
+      <article class="card proj"><span class="rank">09</span><h3>Budget-Flow</h3><p data-i="d9"></p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div><a class="link" href="https://github.com/canuakgun/Budget-Flow" target="_blank" rel="noopener" data-i="open"></a></article>
+      <article class="card proj"><span class="rank">10</span><h3>Commodity Profit Analysis</h3><p data-i="d10"></p><div class="tags"><span class="tag">Java</span></div><a class="link" href="https://github.com/canuakgun/SE115_Project" target="_blank" rel="noopener" data-i="open"></a></article>
+    </div>
+    <p style="margin:24px 0 0"><button id="more" class="btn s" type="button" data-i="more"></button></p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 data-i="contact_h"></h2>
+    <div class="card"><ul>
+      <li>GitHub: <a href="https://github.com/canuakgun" target="_blank" rel="noopener">github.com/canuakgun</a></li>
+      <li><span data-i="email"></span>: <a href="mailto:canuakgun@gmail.com">canuakgun@gmail.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/canakg%C3%BCn" target="_blank" rel="noopener">linkedin.com/in/canakgün</a></li>
+    </ul></div>
+  </section>
+</main>
+
+<footer>© 2026 Can Ulaş Akgün</footer>
+
+<script>
+(function(){
+  var T={
+  en:{nav_about:"About",nav_edu:"Education",nav_tech:"Technologies",nav_proj:"Projects",nav_contact:"Contact",
+    hero_h:"Hi, I'm Can Ulaş Akgün.",hero_sub:"Computer engineering student at İzmir University of Economics, interested in full-stack web development. Hands-on experience with Java, Spring Boot, ASP.NET Core and React.",
+    btn_proj:"View projects",btn_cv:"Download CV (PDF)",about_h:"About",about_ph:"I'm a computer engineering student at İzmir University of Economics with a focus on full-stack web development. During my internships I worked on a .NET and React application at Arkas Holding – Bimar and on technical documentation at Invicti. My projects include a Java API gateway with threat detection and a ship tracking system. I'm also interested in data science and AI.",
+    a_lang_l:"Spoken languages:",a_lang:"English (C2, full professional proficiency), Turkish (native)",
+    a_int_l:"Interests:",a_int:"Full-stack web development, data science, AI",
+    edu_h:"Education",edu_deg:"B.Sc., Computer Engineering",edu_years:"Aug 2023 – Aug 2027 · GPA 3.09",exp_h:"Experience",
+    x1_h:"Arkas Holding – Bimar · .NET / React Developer Intern",x1_m:"Jul 2026 – Aug 2026",x1_b1:"Developed an internal Port Ship Tracking System for managing ships, ports, cargoes, crew members and port visits.",x1_b2:"Built the RESTful API with ASP.NET Core and Entity Framework Core (Repository/Service layers, Swagger docs) and a SQL Server schema with 6 related tables.",x1_b3:"Built the React (Vite) frontend with Axios and form validation; used an Azure DevOps Git repository.",
+    
+    x2_h:"Invicti · Technical Documentation Intern",x2_m:"Jan 2026 – Jun 2026",
+    x2_b:"Worked in the Technical Documentation team of a global cybersecurity company on modernizing documentation workflows and self-service tools. Wrote and maintained content with Docusaurus and Markdown, used GitHub/GitLab for version control, and took part in a chatbot integration project for documentation access.",
+    x3_h:"İzmir University of Economics · Student Assistant, Promotion Unit",x3_m:"Jun 2025 – Aug 2025",
+    x3_b:"Helped introduce and promote the university to prospective students and their families.",
+    x4_h:"İzmir University of Economics · Orientation Guide, Directorate of Health, Culture and Sports",x4_m:"Sep 2025",
+    x4_b:"Worked at the orientation week for prep and freshman students.",
+    tech_h:"Technologies",t_cod:"Programming languages",t_back:"Backend and frameworks",t_front:"Frontend",t_data:"Data",t_tools:"Tools",
+    proj_h:"Projects",open:"Open on GitHub →",more:"Show more projects",less:"Show fewer projects",d1:"Management app for ships, ports, cargoes and crew: ASP.NET Core API, React, SQL Server",d2:"Tool that runs student submissions against test cases and compares the results",d3:"Desktop app that assigns exams to rooms and time slots while avoiding student conflicts",d4:"API gateway with threat detection and automatic IP blacklisting",d5:"Desktop tool that exports ÖSYM exam results to Excel, built for educational institutions",d6:"Cell-based city simulation with residential, commercial and industrial zones and utilities",d7:"Desktop app for organizing a game collection with filtering, sorting and import/export",d8:"Card game with decks, player and computer hands, and turn and score logic",d9:"Budget tracker for income, expenses and balance, storing data in the browser",d10:"Reads monthly files and analyzes commodity profit by day, month and product",
+    
+    
+    
+    
+    contact_h:"Contact",email:"Email"},
+  tr:{nav_about:"Hakkımda",nav_edu:"Eğitim",nav_tech:"Teknolojiler",nav_proj:"Projeler",nav_contact:"İletişim",
+    hero_h:"Merhaba, ben Can Ulaş Akgün.",hero_sub:"İzmir Ekonomi Üniversitesi'nde bilgisayar mühendisliği öğrencisiyim, full-stack web geliştirmeyle ilgileniyorum. Java, Spring Boot, ASP.NET Core ve React ile uygulama deneyimim var.",
+    btn_proj:"Projelerime bak",btn_cv:"CV indir (PDF)",about_h:"Hakkımda",about_ph:"İzmir Ekonomi Üniversitesi'nde bilgisayar mühendisliği okuyorum ve full-stack web geliştirmeye odaklanıyorum. Stajlarımda Arkas Holding – Bimar'da bir .NET ve React uygulaması üzerinde, Invicti'de ise teknik dokümantasyon alanında çalıştım. Projelerim arasında tehdit tespiti yapan bir Java API gateway ve bir gemi takip sistemi var. Veri bilimi ve yapay zekâyla da ilgileniyorum.",
+    a_lang_l:"Diller:",a_lang:"İngilizce (C2, tam profesyonel yeterlilik), Türkçe (ana dil)",
+    a_int_l:"İlgi alanları:",a_int:"Full-stack web geliştirme, veri bilimi, yapay zeka",
+    edu_h:"Eğitim",edu_deg:"Lisans, Bilgisayar Mühendisliği",edu_years:"Ağu 2023 – Ağu 2027 · GANO 3.09",exp_h:"Deneyim",
+    x1_h:"Arkas Holding – Bimar · .NET / React Geliştirici Stajyeri",x1_m:"Tem 2026 – Ağu 2026",x1_b1:"Gemi, liman, kargo, mürettebat ve liman ziyaretlerini yöneten dahili bir Liman Gemi Takip Sistemi geliştirdim.",x1_b2:"ASP.NET Core ve Entity Framework Core ile RESTful API'yi (Repository/Service katmanları, Swagger dokümantasyonu) ve birbiriyle ilişkili 6 tablolu bir SQL Server şemasını geliştirdim.",x1_b3:"Axios kullanan ve form doğrulaması içeren React (Vite) arayüzünü geliştirdim; Azure DevOps Git deposunu kullandım.",
+    
+    x2_h:"Invicti · Teknik Dokümantasyon Stajyeri",x2_m:"Oca 2026 – Haz 2026",
+    x2_b:"Küresel bir siber güvenlik şirketinin Teknik Dokümantasyon ekibinde, dokümantasyon iş akışlarının ve self-servis araçlarının modernleştirilmesi üzerinde çalıştım. Docusaurus ve Markdown ile içerik yazdım ve güncelledim, sürüm kontrolü için GitHub/GitLab kullandım, dokümantasyona erişimi kolaylaştıran chatbot entegrasyon projesine katıldım.",
+    x3_h:"İzmir Ekonomi Üniversitesi · Öğrenci Asistanı, Tanıtım Birimi",x3_m:"Haz 2025 – Ağu 2025",
+    x3_b:"Üniversiteyi aday öğrencilere ve ailelerine tanıtmaya yardımcı oldum.",
+    x4_h:"İzmir Ekonomi Üniversitesi · Oryantasyon Rehberi, Sağlık Kültür ve Spor Daire Başkanlığı",x4_m:"Eyl 2025",
+    x4_b:"Hazırlık ve birinci sınıf öğrencileri için oryantasyon haftasında görev aldım.",
+    tech_h:"Teknolojiler",t_cod:"Programlama dilleri",t_back:"Backend ve framework'ler",t_front:"Frontend",t_data:"Veri",t_tools:"Araçlar",
+    proj_h:"Projeler",open:"GitHub'da aç →",more:"Daha fazla proje göster",less:"Daha az göster",d1:"Gemi, liman, kargo ve mürettebat yönetim uygulaması: ASP.NET Core API, React, SQL Server",d2:"Öğrenci kodlarını test senaryolarına karşı çalıştırıp sonuçları karşılaştıran araç",d3:"Sınavları öğrenci çakışmalarını önleyerek sınıf ve zaman aralıklarına yerleştiren masaüstü uygulaması",d4:"Tehdit tespiti ve otomatik IP kara listesi içeren API gateway",d5:"ÖSYM sonuçlarını Excel'e aktaran, eğitim kurumları için geliştirilmiş masaüstü araç",d6:"Konut, ticari ve endüstriyel bölgeler ile altyapı hizmetleri içeren hücre tabanlı şehir simülasyonu",d7:"Oyun koleksiyonunu filtreleme, sıralama ve içe/dışa aktarma ile yöneten masaüstü uygulaması",d8:"Kart destesi, oyuncu ve bilgisayar elleri, tur ve skor mantığı içeren kart oyunu",d9:"Gelir, gider ve bakiyeyi takip eden, verileri tarayıcıda saklayan bütçe uygulaması",d10:"Aylık dosyalardan emtia kârını gün, ay ve ürün bazında analiz eder",
+    
+    
+    
+    
+    contact_h:"İletişim",email:"E-posta"}};
+  var r=document.documentElement,lb=document.getElementById('lang'),tb=document.getElementById('theme'),cur="en";
+  function apply(l){cur=l;r.lang=l;
+    document.querySelectorAll('[data-i]').forEach(function(e){e.textContent=T[l][e.getAttribute('data-i')]});
+    lb.textContent=l==="en"?"TR":"EN";
+    document.title=l==="en"?"Can Ulaş Akgün — Computer Engineering Student":"Can Ulaş Akgün — Bilgisayar Mühendisliği Öğrencisi";}
+  var saved=null;try{saved=localStorage.getItem('lang')}catch(e){}
+  apply(saved==="tr"?"tr":"en");
+  lb.addEventListener('click',function(){var n=cur==="en"?"tr":"en";apply(n);try{localStorage.setItem('lang',n)}catch(e){}});
+  tb.addEventListener('click',function(){
+    var dark=r.getAttribute('data-theme')==='dark'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme:dark)').matches);
+    r.setAttribute('data-theme',dark?'light':'dark');});
+  var mb=document.getElementById('menu'),lk=document.getElementById('links');
+  mb.addEventListener('click',function(){var o=lk.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
+  lk.addEventListener('click',function(e){if(e.target.tagName==='A'){lk.classList.remove('open');mb.setAttribute('aria-expanded','false')}});
+  var mo=document.getElementById('more'),mg=document.getElementById('more-grid');
+  mo.addEventListener('click',function(){mg.hidden=!mg.hidden;mo.setAttribute('data-i',mg.hidden?'more':'less');apply(cur)});
+})();
+</script>
+</body>
+</html>
